@@ -13,7 +13,7 @@ import pandas as pd
 from datetime import date
 
 
-data_dir = '/media/congvm/DATA/additional_data_33_classes/'
+folder_to_save = '/media/congvm/DATA/additional_data_33_classes/'
 
  
 name_list = [
@@ -26,7 +26,7 @@ id_list = [1]
 
 for kw, cls_id in zip(name_list, id_list):
     # Create data folders
-    data_folder = os.path.join(data_dir, str(cls_id))
+    data_folder = os.path.join(folder_to_save, str(cls_id))
     if not os.path.exists(data_folder):
         os.makedirs(data_folder)
 
